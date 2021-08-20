@@ -31,6 +31,21 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Акцент */
+.accent {
+  color: var(--accent-color);
+}
+
+/* Сброс отступов браузера */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 /* Оформление списков */
 .list {
   list-style: none;
@@ -39,8 +54,19 @@ body {
 .link {
   text-decoration: none;
 }
+
+
+.container {
+  display: flex;
+ width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Оформление логотипа в шапке сайта */
 .logo-header {
+  margin-right: 93px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -50,16 +76,37 @@ body {
 .logo-header:focus {
   color: var(--accent-color);
 }
-
-/* Акцент */
-.accent {
-  color: var(--accent-color);
+/* Раздел навигации сайта */
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
-/* Раздел навигации сайта */
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child){
+margin-right: 50px;
+}
+.site-contacts-item:not(:last-child) {
+margin-right: 50px;
+}
+.contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+
 .header {
+  display: flex;
   background-color: var(--white-color);
   color: var(--title-text-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .header-link {
@@ -78,11 +125,13 @@ body {
 .current {
   color: var(--accent-color);
 }
-.site-links {
+.site-contacts {
+  display: block;
+  display: flex;
   font-style: normal;
 }
 
-.site-links .link {
+.contacts-link.link {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -90,7 +139,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-links .link:hover {
+.contacts-link.link:hover {
   color: var(--accent-color);
 }
 
