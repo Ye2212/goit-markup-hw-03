@@ -261,7 +261,15 @@ padding-bottom: 200px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.features-text {
+line-height: 1.71;
+text-align: left;
+}
 
+.works {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
 .works-title {
   margin-bottom: 50px;
   text-align: center;
@@ -288,11 +296,8 @@ padding-bottom: 200px;
 /* Раздел команда */
 .team {
   background-color: #e5e5e5;
-  margin-top: 40px;
-  margin-bottom: 54px;
 }
 .team-title {
-  margin-top: 94px;
   margin-bottom: 50px;
   text-align: center;
 
@@ -334,8 +339,8 @@ padding-bottom: 200px;
   border-radius: 0px 0px 4px 4px;
 }
 .team-description {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Раздел футер */
@@ -353,7 +358,6 @@ padding-bottom: 200px;
 }
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 
   font-family: Raleway, sans-serif;
@@ -419,7 +423,6 @@ color: var(--title-text-color);
 
 border: transparent;
 border-radius: 4px;
-min-width: 128px;
 background-color: var(--primary-bg-color);
 }
 
